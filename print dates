@@ -1,0 +1,9 @@
+ from datetime import datetime,timedelta
+date=input()
+date_string ="%d %b %Y"
+today=datetime.strptime(date,date_string)
+yesterday=today-timedelta(days=1)
+next_day=today+timedelta(days=1)
+print(yesterday)
+print(today)
+print(next_day)
